@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: stretch;
+    height: 100vh;
+}
+
+#cabecera-principal {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    align-content: center;
+    background-color: #147ace;
+}
+
+#cabecera-principal > * {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-grow: 1;
+    height: 40px;
+    max-height: 40px;
+    margin: 5px 0px;
+    padding-right: 10px;
+}
+
+#cuerpo-principal {
+    flex-grow: 1;
+}
+
+#menu-principal {
+    position: absolute;
+    z-index: 1;
+    left: -132px;
+    list-style: none;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a252b;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-right: 5px;
+    transition: left 1s ease;
+}
+
+#menu-principal:hover{
+    left: 0px;
+}
+
+.menu-principal__a{
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 0px 2px;
+    filter: invert(95%) sepia(0%) saturate(91%) hue-rotate(179deg) brightness(91%) contrast(99%);
+}
