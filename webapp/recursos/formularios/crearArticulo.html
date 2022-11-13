@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/crearArticulo.css">
+    <title>Crear Articulo</title>
+</head>
+<body>
+
+    <header>
+        <h2>Crear Articulo Nuevo</h2>
+    </header>
+
+    <main>
+
+        <form action="" method="post" onsubmit="return validar()">
+            
+            <!-- <div>
+                <label for="nombreArticulo">Nombre del Articulo:</label>
+                <label for="agregarPropiedades">Agregar Propiedades:</label>
+                <label for="categoria">Seleccionar Categoria:</label>
+            </div>
+
+            <div>
+                <input type="text" name="nombreArticulo" id="nombreArticulo">
+                <button class="agregarPropiedad" id="agregarPropiedad">
+                    <img src="../icon/plus.svg" alt="">
+                </button>
+                <select name="categoria" id="categoria">
+                    <option value="">Seleccionar</option>
+                    <option value="">Bebidas</option>
+                    <option value="">Galletas</option>
+                    <option value="">Chocolates</option>
+                    <option value="">Caramelos</option>
+                </select>
+            </div> -->
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="nombreArticulo">Nombre del Articulo:</label></td>
+                        <td><input type="text" name="nombreArticulo" id="nombreArticulo"></td>
+                    </tr>
+                    <!-- <tr>
+                        <td><label for="agregarPropiedades">Agregar Propiedades:</label></td>
+                        <td>
+                            <ul id="lista-propiedades">
+                                <li>Sabor -> Manzana <div class="eliminar-item"><img src="../icon/trash-can.svg" alt=""></div></li>
+                            </ul>
+                            <div class="agregarPropiedad" id="agregarPropiedad">
+                                <img src="../icon/plus.svg" alt="">
+                            </div>
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td><label for="categoria">Seleccionar Categoria:</label></td>
+                        <td>
+                            <select name="categoria" id="categoria">
+                                <option value="">Seleccionar</option>
+                                <option value="1">Bebidas</option>
+                                <option value="2">Galletas</option>
+                                <option value="3">Chocolates</option>
+                                <option value="4">Caramelos</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="crear"><input type="submit" value="Crear Articulo"></td>
+                        <td class="regresar"><a href="../../administracion.html" id="regresar">Regresar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="../js/crearArticulo.js"></script>
+</body>
+</html>
